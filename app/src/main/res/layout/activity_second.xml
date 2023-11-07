@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/lime"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/text_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FZNAKBARRMDHN"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/text_header4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Diterima"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/text_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Pesan Diterima"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:onClick="openSecondActivity2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:layout_toLeftOf="@id/button2"
+        android:layout_alignParentBottom="true"
+        android:hint="Masukkan Pesan Anda"
+        />
+
+</RelativeLayout>
